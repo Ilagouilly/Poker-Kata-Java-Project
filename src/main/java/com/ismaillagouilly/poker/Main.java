@@ -41,19 +41,19 @@ public class Main {
 
         player1.draw(deck);
 
-		System.out.println(player1.getCards());
+	System.out.println(player1.getCards());
 
-		player2.draw(deck);
+	player2.draw(deck);
 
-		System.out.println(player2.getCards());
+	System.out.println(player2.getCards());
 
-		Game game = new Game(player1, player2);
+	Game game = new Game(player1, player2);
 
-		game.drawTable(deck);
+	game.drawTable(deck);
 
-		System.out.println(game.getTable());
+	System.out.println(game.getTable());
 
-		System.out.println("Winner is: " + game.designateWinner(player1, player2).getUsername());
+	System.out.println("Winner is: " + game.designateWinner(player1, player2).getUsername());
 
         // Display closing banner
         displayScoresImplSystemOut.displayClosingBanner();
